@@ -7,8 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Lorem ipsum dolor sit amet.</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eaque vel rem natus aperiam adipisci repellat quaerat voluptatem molestiae voluptas, dicta officiis voluptate numquam ab odio recusandae dignissimos accusantium expedita?</p>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <div id="app">
+        <input type="text" v-on:input="alterarTitulo">
+        <p v-once> {{titulo}} </p>
+        <p> {{saudacao()}} </p>
+        <a v-bind:href="link">Google</a>
+        <hr>
+        <p v-html="linkHTML"></p> </p>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
